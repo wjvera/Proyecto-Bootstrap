@@ -14,12 +14,12 @@
 
     <title>COD3RVER@</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57"> 
 
     <!-- navbar -->
 
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       
       <div class="container"></div>
 
@@ -34,23 +34,23 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbar">
             <ul id="menu" class="navbar-nav me-auto mb-2 mb-lg-0">
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#main">Home</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre mi</a>
+                <a class="nav-link" href="#cartas">Cursos</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Mi portafolio</a>
+                <a class="nav-link" href="#place-time">Extras</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#adquiere">Registrese</a>
               </li>
             
             </ul>
@@ -299,7 +299,7 @@
               <div class="col">
 
                 <div class="d-grid gap-2">
-                  <button class=" btn btn-dark" type="button">
+                  <button class=" btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Enviar
                   </button>
                 </div>
@@ -347,6 +347,27 @@
       </div>
 
     </footer>
+
+    <!--Cuadro de dialogo-->
+      <!-- Modal -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Guardar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              ¿Desaea enviar la informacion?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" href="#">Cerrar</button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
